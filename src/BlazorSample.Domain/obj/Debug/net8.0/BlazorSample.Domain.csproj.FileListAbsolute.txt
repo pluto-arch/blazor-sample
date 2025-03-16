@@ -1,0 +1,12 @@
+F:\demos\TempDemo\src\BlazorSample.Domain\bin\Debug\net8.0\BlazorSample.Domain.deps.json
+F:\demos\TempDemo\src\BlazorSample.Domain\bin\Debug\net8.0\BlazorSample.Domain.dll
+F:\demos\TempDemo\src\BlazorSample.Domain\bin\Debug\net8.0\BlazorSample.Domain.pdb
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.csproj.AssemblyReference.cache
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.AssemblyInfoInputs.cache
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.AssemblyInfo.cs
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.csproj.CoreCompileInputs.cache
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.dll
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\refint\BlazorSample.Domain.dll
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.pdb
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\ref\BlazorSample.Domain.dll

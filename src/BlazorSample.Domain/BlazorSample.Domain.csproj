@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+	<ItemGroup>
+        <PackageReference Include="Dotnetydd.DependencyInjection.Generator" />
+        <PackageReference Include="Dotnetydd.Permission" />
+        <PackageReference Include="Dotnetydd.Specifications" />
+        <PackageReference Include="Dotnetydd.Tools" />
+        <PackageReference Include="MediatR" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="CommunityToolkit.Diagnostics" />
+        <PackageReference Include="Bogus" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Aggregates\Product\" />
+        <Folder Include="Aggregates\System\" />
+        <Folder Include="DomainEvents\Product\" />
+        <Folder Include="Exceptions\" />
+        <Folder Include="Collections\" />
+        <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="BlazorSample.Api.xml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    
+</Project>

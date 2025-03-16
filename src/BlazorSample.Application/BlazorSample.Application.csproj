@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BlazorSample.Domain\BlazorSample.Domain.csproj" />
+		<ProjectReference Include="..\BlazorSample.Infra\BlazorSample.Infra.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FastExpressionCompiler" />
+		<PackageReference Include="Mapster" />
+		<PackageReference Include="Mapster.DependencyInjection" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="CommunityToolkit.Diagnostics" />
+		<PackageReference Include="Microsoft.Extensions.Localization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="BlazorSample.Application.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="AppServices\Product\" />
+	  <Folder Include="DomainEventHandlers\Product\" />
+	  <Folder Include="IntegrationEvents\Events\" />
+	  <Folder Include="Models\Generics\" />
+	  <Folder Include="Permission\" />
+	  <Folder Include="MapperProfiles\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\ModelSharedResource.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>ModelSharedResource.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\ModelSharedResource.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>ModelSharedResource.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>BlazorSample.Application.xml</DocumentationFile>
+		<WarningsAsErrors>NU1605</WarningsAsErrors>
+		<NoWarn>1701;1702,1591</NoWarn>
+	</PropertyGroup>
+</Project>

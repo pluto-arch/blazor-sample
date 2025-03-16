@@ -1,0 +1,225 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BlazorSample.Domain/1.0.0": {
+        "dependencies": {
+          "Bogus": "35.5.1",
+          "CommunityToolkit.Diagnostics": "8.2.2",
+          "Dotnetydd.DependencyInjection.Generator": "1.0.0",
+          "Dotnetydd.Permission": "1.0.0",
+          "Dotnetydd.Specifications": "1.0.0",
+          "Dotnetydd.Tools": "1.0.0",
+          "MediatR": "12.2.0",
+          "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "runtime": {
+          "BlazorSample.Domain.dll": {}
+        }
+      },
+      "Bogus/35.5.1": {
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "assemblyVersion": "35.5.1.0",
+            "fileVersion": "35.5.1.0"
+          }
+        }
+      },
+      "CommunityToolkit.Diagnostics/8.2.2": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Diagnostics.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.2.1"
+          }
+        }
+      },
+      "Dotnetydd.DependencyInjection.Generator/1.0.0": {},
+      "Dotnetydd.Permission/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Dotnetydd.Permission.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Dotnetydd.Specifications/1.0.0": {
+        "runtime": {
+          "lib/net8.0/Dotnetydd.Specifications.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Dotnetydd.Tools/1.0.0": {
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/net8.0/Dotnetydd.Tools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MediatR/12.2.0": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.2.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.NetAnalyzers/8.0.0": {},
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {}
+    }
+  },
+  "libraries": {
+    "BlazorSample.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bogus/35.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GBp2peww04szEJ0GlBlzCYilFDaSkL7Ja4m37YeTRjC/mgoiZnUuifmgUxVD/oLU2MC1uoXfQYK91doGp7Zkpg==",
+      "path": "bogus/35.5.1",
+      "hashPath": "bogus.35.5.1.nupkg.sha512"
+    },
+    "CommunityToolkit.Diagnostics/8.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iILVyo7VvzTlQT7b2qOs1ZDcneKsmuy2mTuxCCaBWEfg3tjw35B/ImO9Xw6It7xi2ie8/2PWfXhFn+Prztg03w==",
+      "path": "communitytoolkit.diagnostics/8.2.2",
+      "hashPath": "communitytoolkit.diagnostics.8.2.2.nupkg.sha512"
+    },
+    "Dotnetydd.DependencyInjection.Generator/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bCWoEw6+H6ckm3untQQkGs6gYovkSYqZqZeS3iIphSeIsVJtBh6bJNKKdpPbomaX7aEX4x1gIHu5PYviu3k9RA==",
+      "path": "dotnetydd.dependencyinjection.generator/1.0.0",
+      "hashPath": "dotnetydd.dependencyinjection.generator.1.0.0.nupkg.sha512"
+    },
+    "Dotnetydd.Permission/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gGube4BiGaKt+K+nHZ+txWZYzQQTfQxf0zAMUDSoJWQltUgS+AbcY6rCYB5Jyn6PScGUMg0XgD3hkfRAez623Q==",
+      "path": "dotnetydd.permission/1.0.0",
+      "hashPath": "dotnetydd.permission.1.0.0.nupkg.sha512"
+    },
+    "Dotnetydd.Specifications/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CntYaPn4xBKSWtTFjFZc5mpPcBzDUzNoB5mwwsApaK+D6f+qBViF7D/O1eQIOPUw7UeKosCePTYY9xotyfwbEg==",
+      "path": "dotnetydd.specifications/1.0.0",
+      "hashPath": "dotnetydd.specifications.1.0.0.nupkg.sha512"
+    },
+    "Dotnetydd.Tools/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kxSEz+CGdlsjMPiHf6/Iu55NJZnl43cTcwyuedQG0PeYvZISgIbQdkahrXezf9y/oecS4hFg2r0pEcAJqzElFQ==",
+      "path": "dotnetydd.tools/1.0.0",
+      "hashPath": "dotnetydd.tools.1.0.0.nupkg.sha512"
+    },
+    "MediatR/12.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8TUFrHapKi6D74PhnSNEguRsH91HNGyP3R4ZQdgDorJgl9Wac5Prh0vA33QfrniAaS6L2xNNhc6vxzg+5AIbwA==",
+      "path": "mediatr/12.2.0",
+      "hashPath": "mediatr.12.2.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.NetAnalyzers/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DxiTgkCl3CGq1rYmBX2wjY7XGbxiBdL4J+/AJIAFLKy5z70NxhnVRnPghnicXZ8oF6JKVXlW3xwznRbI3ioEKg==",
+      "path": "microsoft.codeanalysis.netanalyzers/8.0.0",
+      "hashPath": "microsoft.codeanalysis.netanalyzers.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    }
+  }
+}

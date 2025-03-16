@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\demos\\TempDemo\\src\\BlazorSample.Domain\\BlazorSample.Domain.csproj": {}
+  },
+  "projects": {
+    "F:\\demos\\TempDemo\\src\\BlazorSample.Domain\\BlazorSample.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\demos\\TempDemo\\src\\BlazorSample.Domain\\BlazorSample.Domain.csproj",
+        "projectName": "BlazorSample.Domain",
+        "projectPath": "F:\\demos\\TempDemo\\src\\BlazorSample.Domain\\BlazorSample.Domain.csproj",
+        "packagesPath": "C:\\Users\\mccoy\\.nuget\\packages\\",
+        "outputPath": "F:\\demos\\TempDemo\\src\\BlazorSample.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "F:\\demos\\TempDemo\\NuGet.Config",
+          "C:\\Users\\mccoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.5.1, )",
+              "versionCentrallyManaged": true
+            },
+            "CommunityToolkit.Diagnostics": {
+              "target": "Package",
+              "version": "[8.2.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Dotnetydd.DependencyInjection.Generator": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Dotnetydd.Permission": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Dotnetydd.Specifications": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Dotnetydd.Tools": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.CodeAnalysis.NetAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "AntDesign.ProLayout": "1.2.1",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "Aspire.Hosting": "8.0.0-preview.4.24156.9",
+            "Bogus": "35.5.1",
+            "CommunityToolkit.Diagnostics": "8.2.2",
+            "coverlet.collector": "6.0.2",
+            "Dapper": "2.1.35",
+            "Dapper.SimpleCRUD": "2.3.0",
+            "Dotnetydd.DependencyInjection.Generator": "1.0.0",
+            "Dotnetydd.Permission": "1.0.0",
+            "Dotnetydd.Specifications": "1.0.0",
+            "Dotnetydd.Specifications.EntityFrameworkCore": "1.0.0",
+            "Dotnetydd.Tools": "1.0.0",
+            "FastEndpoints": "5.26.0",
+            "FastEndpoints.Generator": "5.26.0",
+            "FastEndpoints.Security": "5.26.0",
+            "FastEndpoints.Swagger": "5.26.0",
+            "FastExpressionCompiler": "4.1.0",
+            "FluentValidation": "11.9.1",
+            "FluentValidation.AspNetCore": "11.3.0",
+            "Mapster": "7.4.0",
+            "Mapster.DependencyInjection": "1.0.1",
+            "MediatR": "12.2.0",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.4",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.4",
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.4",
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+            "Microsoft.CodeAnalysis.NetAnalyzers": "8.0.0",
+            "Microsoft.EntityFrameworkCore": "8.0.4",
+            "Microsoft.EntityFrameworkCore.InMemory": "8.0.6",
+            "Microsoft.EntityFrameworkCore.Relational": "8.0.4",
+            "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4",
+            "Microsoft.EntityFrameworkCore.Tools": "8.0.4",
+            "Microsoft.Extensions.Configuration.Json": "8.0.0",
+            "Microsoft.Extensions.DependencyInjection": "8.0.0",
+            "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+            "Microsoft.Extensions.Http.Resilience": "8.4.0",
+            "Microsoft.Extensions.Localization": "8.0.4",
+            "Microsoft.Extensions.Logging": "8.0.0",
+            "Microsoft.FluentUI.AspNetCore.Components": "4.7.1",
+            "Microsoft.FluentUI.AspNetCore.Components.Icons": "4.7.0",
+            "Microsoft.NET.Test.Sdk": "17.9.0",
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
+            "NUnit": "4.1.0",
+            "NUnit.Analyzers": "4.2.0",
+            "NUnit3TestAdapter": "4.5.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.8.1",
+            "OpenTelemetry.Extensions.Hosting": "1.8.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.8.1",
+            "OpenTelemetry.Instrumentation.Http": "1.8.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.8.0",
+            "Polly": "8.3.1",
+            "Serilog": "3.1.1",
+            "Serilog.AspNetCore": "8.0.1",
+            "Serilog.Enrichers.Environment": "2.3.0",
+            "Serilog.Enrichers.Process": "2.0.2",
+            "Serilog.Enrichers.Sensitive": "1.7.3",
+            "Serilog.Enrichers.Thread": "3.1.0",
+            "Serilog.Extensions.Logging": "8.0.0",
+            "Serilog.Sinks.Async": "1.5.0",
+            "Sharprompt": "2.4.5",
+            "Swashbuckle.AspNetCore": "6.5.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

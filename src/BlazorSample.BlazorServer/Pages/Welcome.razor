@@ -1,0 +1,69 @@
+﻿@page "/"
+@using AntDesign.TableModels
+@using BlazorSample.Application.AppServices.Product
+@using BlazorSample.Application.Models.Product
+
+
+
+
+<AntDesign.ProLayout.PageContainer Title="Product">
+
+    <AntDesign.Button OnClick="Create" Type="AntDesign.ButtonType.Primary" Size="AntDesign.ButtonSize.Small">Create</AntDesign.Button>
+
+    <AntDesign.Table @ref="_refTable" TItem=" ProductListItemDto" DataSource="@mockDb" OnChange="SearchAsync" Total="_total">
+        <AntDesign.PropertyColumn Property="c=>c.Name"/>
+        <AntDesign.PropertyColumn Property="c=>c.CreateTime" />
+    </AntDesign.Table>
+</AntDesign.ProLayout.PageContainer>
+
+
+@inject IProductAppService ProductAppService
+
+@code {
+    List<ProductListItemDto> mockDb = [];
+    int _total;
+    AntDesign.Table<ProductListItemDto> _refTable;
+    ProductPagedRequest request = new ProductPagedRequest();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await ProductAppService.GetAsync("1111222233");
+        await base.OnInitializedAsync();
+    }
+
+
+    async Task SearchAsync(QueryModel<ProductListItemDto> query)
+    {
+        request.PageNo = query.PageIndex;
+        var result = await ProductAppService.GetListAsync(new ProductPagedRequest());
+        mockDb = result.Items.ToList();
+        _total = result.TotalCount;
+    }
+
+    async Task Load()
+    {
+        var result = await ProductAppService.GetAsync("1111222233");
+    }
+
+    async Task Create()
+    {
+        await ProductAppService.CreateAsync(new ProductCreateRequest
+        {
+            Id=DateTime.Now.ToString("yyyyMMddHHmmssfff"),
+            Name="zxczxc",
+            Remark="xcxcx"
+        });
+
+        _refTable.ReloadData();
+
+
+        await ProductAppService.CreateAsync(new ProductCreateRequest
+        {
+            Id = DateTime.Now.ToString("yyyyMMddHHmmssfff"),
+            Name = "zxczxc",
+            Remark = "xcxcx"
+        });
+
+        _refTable.ReloadData();
+    }
+}
