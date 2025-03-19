@@ -35,12 +35,7 @@ F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Mapster.Core.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Mapster.DependencyInjection.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\MediatR.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\MediatR.Contracts.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -56,8 +51,6 @@ F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Extensio
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.FluentUI.AspNetCore.Components.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.FluentUI.AspNetCore.Components.Icons.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -66,7 +59,6 @@ F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.Identity
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.JSInterop.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -203,3 +195,7 @@ F:\demos\TempDemo\test\BlazorSample.UnitTest\obj\Debug\net8.0\refint\BlazorSampl
 F:\demos\TempDemo\test\BlazorSample.UnitTest\obj\Debug\net8.0\BlazorSample.UnitTest.pdb
 F:\demos\TempDemo\test\BlazorSample.UnitTest\obj\Debug\net8.0\BlazorSample.UnitTest.genruntimeconfig.cache
 F:\demos\TempDemo\test\BlazorSample.UnitTest\obj\Debug\net8.0\ref\BlazorSample.UnitTest.dll
+F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\AntDesign.dll
+F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\AntDesign.ProLayout.dll
+F:\demos\TempDemo\test\BlazorSample.UnitTest\bin\Debug\net8.0\OneOf.dll
+F:\demos\TempDemo\test\BlazorSample.UnitTest\obj\Debug\net8.0\BlazorSample.UnitTest.sourcelink.json

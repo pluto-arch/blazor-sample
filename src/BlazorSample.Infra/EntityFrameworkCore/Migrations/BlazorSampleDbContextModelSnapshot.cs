@@ -17,10 +17,161 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.APIResource", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ApplicationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationId");
+
+                    b.ToTable("APIResource");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.APIResourceRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("APIResourceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("APIResourceId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("APIResourceRole");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.Application", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Application");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ApplicationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationId");
+
+                    b.ToTable("Role");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.UIResource", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ApplicationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationId");
+
+                    b.ToTable("UIResource");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.UIResourceRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UIResourceId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("UIResourceId");
+
+                    b.ToTable("UIResourceRole");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
+                });
 
             modelBuilder.Entity("BlazorSample.Domain.Aggregates.EventLogs.IntegrationEventLogEntry", b =>
                 {
@@ -82,9 +233,6 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
                         .HasMaxLength(36)
                         .HasColumnType("nvarchar(36)");
 
-                    b.Property<string>("TenantId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
@@ -113,7 +261,6 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
             modelBuilder.Entity("BlazorSample.Domain.Aggregates.Product.Product", b =>
                 {
                     b.Property<string>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTimeOffset>("CreationTime")
@@ -134,9 +281,6 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
                     b.Property<string>("Remark")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("TenantId")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -169,12 +313,93 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.Property<string>("TenantId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("PermissionGrant", (string)null);
+                });
+
+            modelBuilder.Entity("RoleUser", b =>
+                {
+                    b.Property<int>("RolesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RolesId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("RoleUser");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.APIResource", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Application", "Application")
+                        .WithMany("APIResources")
+                        .HasForeignKey("ApplicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Application");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.APIResourceRole", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.APIResource", "APIResource")
+                        .WithMany("APIResourceRoles")
+                        .HasForeignKey("APIResourceId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Role", "Role")
+                        .WithMany("APIResourceRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("APIResource");
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.Role", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Application", null)
+                        .WithMany("Roles")
+                        .HasForeignKey("ApplicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.UIResource", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Application", "Application")
+                        .WithMany("UIResources")
+                        .HasForeignKey("ApplicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Application");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.UIResourceRole", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Role", "Role")
+                        .WithMany("UIResourceRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.UIResource", "UIResource")
+                        .WithMany("UIResourceRoles")
+                        .HasForeignKey("UIResourceId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("UIResource");
                 });
 
             modelBuilder.Entity("BlazorSample.Domain.Aggregates.Product.Device", b =>
@@ -199,6 +424,47 @@ namespace BlazorSample.Infra.EntityFrameworkCore.Migrations
                     b.Navigation("Address");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("RoleUser", b =>
+                {
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlazorSample.Domain.Aggregates.App.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.APIResource", b =>
+                {
+                    b.Navigation("APIResourceRoles");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.Application", b =>
+                {
+                    b.Navigation("APIResources");
+
+                    b.Navigation("Roles");
+
+                    b.Navigation("UIResources");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.Role", b =>
+                {
+                    b.Navigation("APIResourceRoles");
+
+                    b.Navigation("UIResourceRoles");
+                });
+
+            modelBuilder.Entity("BlazorSample.Domain.Aggregates.App.UIResource", b =>
+                {
+                    b.Navigation("UIResourceRoles");
                 });
 
             modelBuilder.Entity("BlazorSample.Domain.Aggregates.Product.Product", b =>

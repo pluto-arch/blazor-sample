@@ -15,3 +15,4 @@ F:\demos\TempDemo\src\BlazorSample.Infra\obj\Debug\net8.0\refint\BlazorSample.In
 F:\demos\TempDemo\src\BlazorSample.Infra\obj\Debug\net8.0\BlazorSample.Infra.pdb
 F:\demos\TempDemo\src\BlazorSample.Infra\obj\Debug\net8.0\BlazorSample.Infra.genruntimeconfig.cache
 F:\demos\TempDemo\src\BlazorSample.Infra\obj\Debug\net8.0\ref\BlazorSample.Infra.dll
+F:\demos\TempDemo\src\BlazorSample.Infra\obj\Debug\net8.0\BlazorSample.Infra.sourcelink.json

@@ -10,3 +10,4 @@ F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.d
 F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\refint\BlazorSample.Domain.dll
 F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.pdb
 F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\ref\BlazorSample.Domain.dll
+F:\demos\TempDemo\src\BlazorSample.Domain\obj\Debug\net8.0\BlazorSample.Domain.sourcelink.json

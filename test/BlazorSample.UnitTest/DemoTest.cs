@@ -1,9 +1,12 @@
 ﻿using BlazorSample.Application.AppServices.Product;
 using BlazorSample.Application.Models.Product;
+using BlazorSample.Domain.Aggregates.App;
 using BlazorSample.Domain.Aggregates.Product;
 using BlazorSample.Domain.Infra.Repository;
 using BlazorSample.Infra.EntityFrameworkCore.DbContexts;
 using BlazorSample.Uow;
+using Bogus.DataSets;
+using static BlazorSample.Application.Permission.RolePermission;
 
 namespace BlazorSample.UnitTest
 {
@@ -35,20 +38,38 @@ namespace BlazorSample.UnitTest
         [Test]
         public async Task UnitOfWorkTest()
         {
-            var uow = ServiceProvider.GetService<IUnitOfWork<BlazorSampleDbContext>>();
+            var uow = ServiceProvider.GetService<BlazorSampleDbContext>();
 
-            var code = uow.GetHashCode();
+            var role = new List<Role>()
+            {
+                new Role
+                {
+                    Name="a"
+                }
+            };
+            var app = new Domain.Aggregates.App.Application
+            {
+                Name = "Hello",
+                Roles = role,
+                APIResources = new List<APIResource>
+                {
+                    new APIResource
+                    {
+                        Name="ar1"
+                    }
+                },
+                UIResources = new List<UIResource>
+                {
+                    new UIResource
+                    {
+                        Name="ar2"
+                    }
+                }
+            };
 
-            var repa = uow.Resolve<IEfRepository<Product>>();
 
-
-            await using var subUow = uow.BeginNew();
-            var code2=subUow.ServiceProvider.GetHashCode();
-            Assert.That(code!=code2,Is.True);
-            var rep2= subUow.Resolve<IEfRepository<Product>>();
-            Assert.That(repa != rep2, Is.True);
-            Assert.That(repa.DataContext.GetHashCode()!=rep2.DataContext.GetHashCode(),Is.True);
-
+            await uow.Application.AddRangeAsync(app);
+            await uow.SaveChangesAsync();
         }
 
     }

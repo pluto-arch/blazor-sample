@@ -122,3 +122,4 @@ F:\demos\TempDemo\src\BlazorSample.BlazorServer\bin\Debug\net8.0\AntDesign.dll
 F:\demos\TempDemo\src\BlazorSample.BlazorServer\bin\Debug\net8.0\AntDesign.ProLayout.dll
 F:\demos\TempDemo\src\BlazorSample.BlazorServer\bin\Debug\net8.0\OneOf.dll
 F:\demos\TempDemo\src\BlazorSample.BlazorServer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\demos\TempDemo\src\BlazorSample.BlazorServer\obj\Debug\net8.0\BlazorSample.BlazorServer.sourcelink.json

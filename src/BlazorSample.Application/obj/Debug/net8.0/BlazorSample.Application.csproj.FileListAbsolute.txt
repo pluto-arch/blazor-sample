@@ -24,3 +24,4 @@ F:\demos\TempDemo\src\BlazorSample.Application\obj\Debug\net8.0\BlazorSample.App
 F:\demos\TempDemo\src\BlazorSample.Application\obj\Debug\net8.0\refint\BlazorSample.Application.dll
 F:\demos\TempDemo\src\BlazorSample.Application\obj\Debug\net8.0\BlazorSample.Application.pdb
 F:\demos\TempDemo\src\BlazorSample.Application\obj\Debug\net8.0\ref\BlazorSample.Application.dll
+F:\demos\TempDemo\src\BlazorSample.Application\obj\Debug\net8.0\BlazorSample.Application.sourcelink.json

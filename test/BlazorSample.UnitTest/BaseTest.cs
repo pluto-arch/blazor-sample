@@ -54,7 +54,7 @@ namespace BlazorSample.UnitTest
 
             services.AddEfCoreInfraComponent<BlazorSampleDbContext>((serviceProvider,optionsBuilder) =>
             {
-                optionsBuilder.UseInMemoryDatabase("BlazorSampleUnitTest");
+                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BlazorSampleDb;Trusted_Connection=True;MultipleActiveResultSets=true");
 
                 var mediator = serviceProvider.GetService<IDomainEventDispatcher>() ?? NullDomainEventDispatcher.Instance;
                 optionsBuilder.AddInterceptors(new DataChangeSaveChangesInterceptor(mediator));
