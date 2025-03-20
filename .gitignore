@@ -355,3 +355,11 @@ MigrationBackup/
 obj/
 
 **/obj/
+/src/BlazorSample.Infra/obj
+/src/BlazorSample.Infra/bin
+/src/BlazorSample.Domain/bin
+/src/BlazorSample.BlazorServer/obj
+/src/BlazorSample.BlazorServer/bin
+/src/BlazorSample.Application/obj
+/test/BlazorSample.UnitTest/bin
+/test/BlazorSample.UnitTest/obj
